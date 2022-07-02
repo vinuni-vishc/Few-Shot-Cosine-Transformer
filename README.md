@@ -14,7 +14,7 @@
 ## Abstract
 > In this work, we proposed a few-shot image classification algorithm using Attention-based Transformer algorithm named Few-Shot TransFormer (FS-TF). In our few-shot archtecture, we propose a new attention mechanism named Cosine Attention, which achieved a more robust, better performances in the comparison with the standard Softmax Self-Attention in many scencarios. With our proposed method, we achieved a competitive performance on 3 datasets _mini_-ImageNet, CUB-200, and CIFAR-FS on 5-way 1-shot and 5-way 5-shot settings.
 
-![](figures/FSTF_proposed_method.png)*Our proposed FS-TF method with Cosine Attention within*
+![](figures/FSTF_proposed_method.png)*Our proposed FS-TF method with Cosine Attention mechanism*
 
 ## Experiments
 ### Dependencies environment
@@ -32,21 +32,21 @@
   wandb
 ```
 ### Dataset
-+ *mini*-ImageNet:  
++ **_mini_-ImageNet**:  
   + Go to `/dataset/miniImagenet/`
   + Download the dataset from `download_miniImagenet.txt`
   + Run `source miniImagenet_processing.sh` for processing dataset.
   + When complete, there are three JSON files `base.json`, `val.json`, and `novel.json` for experiments
-+ CUB:
++ **CUB**:
   + Go to `/dataset/CUB/`
   + Processing data similar to **mini**-Imagenet dataset
-+ CIFAR:
++ **CIFAR**:
   + Go to `/dataset/CIFAR_FS/`
   + Processing data similar to **mini**-Imagenet dataset
-+ Omniglot:
++ **Omniglot**:
   + Go to `/dataset/omniglot/`
   + Run `source download_omniglot.sh`
-+ Yoga:
++ **Yoga**:
   + This is our custom dataset with 2480 images divided into 50 yoga pose categories, including 50 categiores for training, 13 for validating, and 12 for testing
   + Go to `/dataset/Yoga/`
   + Run `source yoga_processing.sh`
