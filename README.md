@@ -74,16 +74,16 @@
   + `source run_script.sh`
   + Parameters can be modified within the script for specific experiments, including dataset, backbone, method, n_way, k_shot, augmentation
   + All the method automatically push the training loss/val logs into WandB server. Set `--wandb 0` to turn it off
-+ Experiments results are saved in `record/results.txt`
++ Result logs after testing will be saved in `record/results.txt`
 ## Results
 Our method Few-Shot TransFormer achieves the following performances on:
 | Dataset        | 1-shot Accuracy  | 5-shot Accuracy |
-| ---------------|---------------| -------------|
+| ---------------|---------------|--------------|
 | miniImageNet   |  80.32+-0.70% | 93.82+-0.33% |
 | CUB            |  81.23+-0.77% | 92.25+-0.37% |
 | CIFAR-FS       |  67.06+-0.89% | 82.89+-0.61% |
 
-Detail results are saved in `record/official_results.txt`.
+All detail results are saved in `record/official_results.txt`
 
 ## References
 + [A Closer Look at Few-shot Classification (ICLM 2019)](https://arxiv.org/abs/1904.04232)
