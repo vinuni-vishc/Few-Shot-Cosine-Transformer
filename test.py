@@ -80,14 +80,14 @@ if __name__ == '__main__':
     pp.pprint(vars(params))
     print()
     
-    if params.dataset == 'omniglot': params.n_query = min(params.n_query, 15)   #Omniglot only support maximum 15 samples/category as query
+    if params.dataset == 'Omniglot': params.n_query = min(params.n_query, 15)   #Omniglot only support maximum 15 samples/category as query
 
     if params.dataset == "CIFAR":
         image_size = 112 if 'ResNet' in params.backbone else 64
     else:
         image_size = 224 if 'ResNet' in params.backbone else 84
 
-    if params.dataset in ['omniglot', 'cross_char']:
+    if params.dataset in ['Omniglot', 'cross_char']:
         if params.backbone == 'Conv4': params.backbone = 'Conv4S'
         if params.backbone == 'Conv6': params.backbone = 'Conv6S'
 
@@ -101,7 +101,7 @@ if __name__ == '__main__':
             testfile = configs.data_dir['CUB'] + split + '.json'
     elif params.dataset == 'cross_char':
         if split == 'base':
-            testfile = configs.data_dir['omniglot'] + 'noLatin.json'
+            testfile = configs.data_dir['Omniglot'] + 'noLatin.json'
         else:
             testfile = configs.data_dir['emnist'] + split + '.json'
     else:
@@ -119,23 +119,21 @@ if __name__ == '__main__':
             variant = 'cosine' if params.method == 'FSTF_cosine' else 'softmax'
             
             def feature_model():
-                if params.dataset in ['omniglot', 'cross_char']:
+                if params.dataset in ['Omniglot', 'cross_char']:
                     params.backbone = change_model(params.backbone)
-                return model_dict[params.backbone](params.dataset, flatten=True)
+                return model_dict[params.backbone](params.feti, params.dataset, flatten=True) if 'ResNet' in params.backbone else model_dict[params.backbone](params.dataset, flatten=True)
 
-            model = FewShotTransformer(
-                feature_model, variant=variant, **few_shot_params)
+            model = FewShotTransformer(feature_model, variant=variant, **few_shot_params)
             
         elif params.method in ['CTX_softmax', 'CTX_cosine']:
             variant = 'cosine' if params.method == 'CTX_cosine' else 'softmax'
             input_dim = 512 if "ResNet" in params.backbone else 64
             def feature_model():
-                if params.dataset in ['omniglot', 'cross_char']:
+                if params.dataset in ['Omniglot', 'cross_char']:
                     params.backbone = change_model(params.backbone)
-                return model_dict[params.backbone](params.dataset, flatten=False)
+                return model_dict[params.backbone](params.feti, params.dataset, flatten=False) if 'ResNet' in params.backbone else model_dict[params.backbone](params.dataset, flatten=False)
 
-            model = CTX(
-                feature_model, variant=variant, input_dim = input_dim, **few_shot_params)
+            model = CTX(feature_model, variant=variant, input_dim=input_dim, **few_shot_params)
     else:
         raise ValueError('Unknown method')
 
@@ -143,9 +141,11 @@ if __name__ == '__main__':
     
     
     params.checkpoint_dir = '%scheckpoints/%s/%s_%s' % (
-        configs.save_dir, params.dataset, backbone_model, params.method)
+        configs.save_dir, params.dataset, params.backbone, params.method)
     if params.train_aug:
         params.checkpoint_dir += '_aug'
+    if params.feti and 'ResNet' in params.backbone:
+        params.checkpoint_dir += '_feti'
 
     params.checkpoint_dir += '_%dway_%dshot' % (
         params.n_way, params.k_shot)
@@ -197,6 +197,7 @@ if __name__ == '__main__':
         timestamp = params.datetime
 
         aug_str = '-aug' if params.train_aug else ''
+        aug_str += '-feti' if params.feti and 'ResNet' in params.backbone else ''
 
         if params.backbone == "Conv4SNP": 
             params.backbone = "Conv4"
@@ -207,5 +208,5 @@ if __name__ == '__main__':
         
         acc_str = 'Test Acc = %4.2f%% +- %4.2f%%' % (acc_mean, 1.96 * acc_std/np.sqrt(iter_num))
         
-        f.write('Time: %s   Setting: %s %s \n' % (timestamp, exp_setting.ljust(45), acc_str))
+        f.write('Time: %s   Setting: %s %s \n' % (timestamp, exp_setting.ljust(50), acc_str))
     

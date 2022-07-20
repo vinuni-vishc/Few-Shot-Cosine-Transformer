@@ -13,20 +13,21 @@ model_dict = dict(
             Conv6S = backbone.Conv6S,
             Conv6NP=backbone.Conv6NP,
             Conv6SNP = backbone.Conv6SNP,
-            ResNet10 = backbone.ResNet12,
+            ResNet12 = backbone.ResNet12,
             ResNet18 = backbone.ResNet18,
             ResNet34 = backbone.ResNet34) 
 
 def parse_args():
     parser = argparse.ArgumentParser(description= 'few-shot script' )
-    parser.add_argument('--dataset'         , default='miniImageNet', help='CIFAR/CUB/miniImagenet/cross/omniglot/cross_char/Yoga/')
-    parser.add_argument('--backbone'        , default='ResNet14',      help='backbone: Conv{4|6} / ResNet{12|18|34}')
+    parser.add_argument('--dataset'         , default='miniImagenet', help='CIFAR/CUB/miniImagenet/cross/Omniglot/cross_char/Yoga/')
+    parser.add_argument('--backbone'        , default='ResNet18',      help='backbone: Conv{4|6} / ResNet{12|18|34}')
     parser.add_argument('--method'          , default='FSTF_cosine',   help='CTX_softmax/CTX_cosine/FSTF_softmax/FSTF_cosine') 
     parser.add_argument('--n_way'           , default=5, type=int,  help='number of categories')
     parser.add_argument('--n_query'         , default=16, type=int,  help='number of query samples per category')
     parser.add_argument('--k_shot'          , default=5, type=int,  help='number of labeled data per category') 
     parser.add_argument('--train_aug'       , type=int, default=0, help='[1:0] - [True:False]; perform data augmentation or not during training')
     parser.add_argument('--n_episode'       , default=200, type=int, help='number of iteration (episode) per epoch for training/validating')
+    parser.add_argument('--feti'            , default=0, type=int, help='[1:0] - [True:False]; Use pre-trained model on ImageNet subset that is trained non-overlapped with mini-ImgeNet test set. Only support ResNet backbone')
     parser.add_argument('--test_iter'       , default=600, type=int, help ='Number of iteration (episode) for testing') 
     parser.add_argument('--learning_rate'   , default=1e-3, type=float, help='learning rate')
     parser.add_argument('--weight_decay'    , default=1e-5, type=float, help='weight decay')

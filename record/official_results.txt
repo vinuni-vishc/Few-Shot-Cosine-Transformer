@@ -1,226 +1,244 @@
 ###########################################################################################################
 FewShotTransFormer - miniImagenet - Conv4/Conv6/ResNet18/ResNet34 - 5w1/5s - aug
 ###########################################################################################################
-Time: 20220524@113744   Setting: miniImagenet-Conv4-FSTF_softmax-5w1s          Test Acc = 42.55% +- 0.70% 
-Time: 20220524@120513   Setting: miniImagenet-Conv4-FSTF_softmax-aug-5w1s      Test Acc = 38.11% +- 0.73% 
-Time: 20220524@122925   Setting: miniImagenet-Conv4-FSTF_cosine-5w1s           Test Acc = 45.69% +- 0.75% 
-Time: 20220524@125202   Setting: miniImagenet-Conv4-FSTF_cosine-aug-5w1s       Test Acc = 40.73% +- 0.77% 
-Time: 20220524@143034   Setting: miniImagenet-Conv4-FSTF_softmax-5w5s          Test Acc = 58.08% +- 0.63% 
-Time: 20220524@145828   Setting: miniImagenet-Conv4-FSTF_softmax-aug-5w5s      Test Acc = 57.14% +- 0.67% 
-Time: 20220524@152405   Setting: miniImagenet-Conv4-FSTF_cosine-5w5s           Test Acc = 60.38% +- 0.66% 
-Time: 20220524@155005   Setting: miniImagenet-Conv4-FSTF_cosine-aug-5w5s       Test Acc = 60.21% +- 0.65% 
+Time: 20220524@113744   Setting: miniImagenet-Conv4-FSTF_softmax-5w1s               Test Acc = 42.55% +- 0.70% 
+Time: 20220524@120513   Setting: miniImagenet-Conv4-FSTF_softmax-aug-5w1s           Test Acc = 38.11% +- 0.73% 
+Time: 20220524@122925   Setting: miniImagenet-Conv4-FSTF_cosine-5w1s                Test Acc = 45.69% +- 0.75% 
+Time: 20220524@125202   Setting: miniImagenet-Conv4-FSTF_cosine-aug-5w1s            Test Acc = 40.73% +- 0.77% 
+Time: 20220524@143034   Setting: miniImagenet-Conv4-FSTF_softmax-5w5s               Test Acc = 58.08% +- 0.63% 
+Time: 20220524@145828   Setting: miniImagenet-Conv4-FSTF_softmax-aug-5w5s           Test Acc = 57.14% +- 0.67% 
+Time: 20220524@152405   Setting: miniImagenet-Conv4-FSTF_cosine-5w5s                Test Acc = 60.38% +- 0.66% 
+Time: 20220524@155005   Setting: miniImagenet-Conv4-FSTF_cosine-aug-5w5s            Test Acc = 60.21% +- 0.65% 
 
-Time: 20220524@222321   Setting: miniImagenet-Conv6-FSTF_softmax-5w1s          Test Acc = 39.11% +- 0.72% 
-Time: 20220524@224656   Setting: miniImagenet-Conv6-FSTF_softmax-aug-5w1s      Test Acc = 33.89% +- 0.66% 
-Time: 20220524@230836   Setting: miniImagenet-Conv6-FSTF_cosine-5w1s           Test Acc = 40.52% +- 0.71% 
-Time: 20220524@232952   Setting: miniImagenet-Conv6-FSTF_cosine-aug-5w1s       Test Acc = 35.33% +- 0.71% 
-Time: 20220525@010351   Setting: miniImagenet-Conv6-FSTF_softmax-5w5s          Test Acc = 56.52% +- 0.66% 
-Time: 20220525@012942   Setting: miniImagenet-Conv6-FSTF_softmax-aug-5w5s      Test Acc = 54.26% +- 0.69% 
-Time: 20220525@015525   Setting: miniImagenet-Conv6-FSTF_cosine-5w5s           Test Acc = 59.85% +- 0.68% 
-Time: 20220525@022055   Setting: miniImagenet-Conv6-FSTF_cosine-aug-5w5s       Test Acc = 57.81% +- 0.68% 
+Time: 20220524@222321   Setting: miniImagenet-Conv6-FSTF_softmax-5w1s               Test Acc = 39.11% +- 0.72% 
+Time: 20220524@224656   Setting: miniImagenet-Conv6-FSTF_softmax-aug-5w1s           Test Acc = 33.89% +- 0.66% 
+Time: 20220524@230836   Setting: miniImagenet-Conv6-FSTF_cosine-5w1s                Test Acc = 40.52% +- 0.71% 
+Time: 20220524@232952   Setting: miniImagenet-Conv6-FSTF_cosine-aug-5w1s            Test Acc = 35.33% +- 0.71% 
+Time: 20220525@010351   Setting: miniImagenet-Conv6-FSTF_softmax-5w5s               Test Acc = 56.52% +- 0.66% 
+Time: 20220525@012942   Setting: miniImagenet-Conv6-FSTF_softmax-aug-5w5s           Test Acc = 54.26% +- 0.69% 
+Time: 20220525@015525   Setting: miniImagenet-Conv6-FSTF_cosine-5w5s                Test Acc = 59.85% +- 0.68% 
+Time: 20220525@022055   Setting: miniImagenet-Conv6-FSTF_cosine-aug-5w5s            Test Acc = 57.81% +- 0.68% 
 
-Time: 20220627@135006   Setting: miniImagenet-ResNet18-FSTF_softmax-5w1s       Test Acc = 72.36% +- 0.78% 
-Time: 20220627@143906   Setting: miniImagenet-ResNet18-FSTF_softmax-aug-5w1s   Test Acc = 73.84% +- 0.76% 
-Time: 20220627@152700   Setting: miniImagenet-ResNet18-FSTF_cosine-5w1s        Test Acc = 75.93% +- 0.75% 
-Time: 20220627@161604   Setting: miniImagenet-ResNet18-FSTF_cosine-aug-5w1s    Test Acc = 77.40% +- 0.74% 
-Time: 20220627@190550   Setting: miniImagenet-ResNet18-FSTF_softmax-5w5s       Test Acc = 84.13% +- 0.56%
-Time: 20220627@200656   Setting: miniImagenet-ResNet18-FSTF_softmax-aug-5w5s   Test Acc = 84.65% +- 0.55% 
-Time: 20220627@210704   Setting: miniImagenet-ResNet18-FSTF_cosine-5w5s        Test Acc = 90.12% +- 0.37%
-Time: 20220627@220826   Setting: miniImagenet-ResNet18-FSTF_cosine-aug-5w5s    Test Acc = 91.33% +- 0.37%
+Time: 20220627@135006   Setting: miniImagenet-ResNet18-FSTF_softmax-5w1s            Test Acc = 72.36% +- 0.78% 
+Time: 20220627@143906   Setting: miniImagenet-ResNet18-FSTF_softmax-aug-5w1s        Test Acc = 73.84% +- 0.76% 
+Time: 20220627@152700   Setting: miniImagenet-ResNet18-FSTF_cosine-5w1s             Test Acc = 75.93% +- 0.75% 
+Time: 20220627@161604   Setting: miniImagenet-ResNet18-FSTF_cosine-aug-5w1s         Test Acc = 77.40% +- 0.74% 
+Time: 20220627@190550   Setting: miniImagenet-ResNet18-FSTF_softmax-5w5s            Test Acc = 84.13% +- 0.56%
+Time: 20220627@200656   Setting: miniImagenet-ResNet18-FSTF_softmax-aug-5w5s        Test Acc = 84.65% +- 0.55% 
+Time: 20220627@210704   Setting: miniImagenet-ResNet18-FSTF_cosine-5w5s             Test Acc = 90.12% +- 0.37%
+Time: 20220627@220826   Setting: miniImagenet-ResNet18-FSTF_cosine-aug-5w5s         Test Acc = 91.33% +- 0.37%
 
-Time: 20220628@051908   Setting: miniImagenet-ResNet34-FSTF_softmax-5w1s       Test Acc = 73.90% +- 0.78% 
-Time: 20220628@060945   Setting: miniImagenet-ResNet34-FSTF_softmax-aug-5w1s   Test Acc = 74.61% +- 0.76% 
-Time: 20220628@070031   Setting: miniImagenet-ResNet34-FSTF_cosine-5w1s        Test Acc = 79.01% +- 0.71% 
-Time: 20220628@075106   Setting: miniImagenet-ResNet34-FSTF_cosine-aug-5w1s    Test Acc = 80.32% +- 0.70% 
-Time: 20220628@112408   Setting: miniImagenet-ResNet34-FSTF_softmax-5w5s       Test Acc = 85.58% +- 0.53% 
-Time: 20220628@122520   Setting: miniImagenet-ResNet34-FSTF_softmax-aug-5w5s   Test Acc = 88.74% +- 0.45% 
-Time: 20220628@132903   Setting: miniImagenet-ResNet34-FSTF_cosine-5w5s        Test Acc = 91.64% +- 0.37%
-Time: 20220628@143116   Setting: miniImagenet-ResNet34-FSTF_cosine-aug-5w5s    Test Acc = 93.82% +- 0.33% 
+Time: 20220628@051908   Setting: miniImagenet-ResNet34-FSTF_softmax-5w1s            Test Acc = 73.90% +- 0.78% 
+Time: 20220628@060945   Setting: miniImagenet-ResNet34-FSTF_softmax-aug-5w1s        Test Acc = 74.61% +- 0.76% 
+Time: 20220628@070031   Setting: miniImagenet-ResNet34-FSTF_cosine-5w1s             Test Acc = 79.01% +- 0.71% 
+Time: 20220628@075106   Setting: miniImagenet-ResNet34-FSTF_cosine-aug-5w1s         Test Acc = 80.32% +- 0.70% 
+Time: 20220628@112408   Setting: miniImagenet-ResNet34-FSTF_softmax-5w5s            Test Acc = 85.58% +- 0.53% 
+Time: 20220628@122520   Setting: miniImagenet-ResNet34-FSTF_softmax-aug-5w5s        Test Acc = 88.74% +- 0.45% 
+Time: 20220628@132903   Setting: miniImagenet-ResNet34-FSTF_cosine-5w5s             Test Acc = 91.64% +- 0.37%
+Time: 20220628@143116   Setting: miniImagenet-ResNet34-FSTF_cosine-aug-5w5s         Test Acc = 93.82% +- 0.33% 
+
+Time: 20220715@093234   Setting: miniImagenet-ResNet12-FSTF_softmax-feti-5w1s       Test Acc = 45.70% +- 0.81% 
+Time: 20220715@103117   Setting: miniImagenet-ResNet12-FSTF_softmax-aug-feti-5w1s   Test Acc = 38.88% +- 0.71% 
+Time: 20220715@112710   Setting: miniImagenet-ResNet12-FSTF_cosine-feti-5w1s        Test Acc = 55.62% +- 0.85% 
+Time: 20220715@122345   Setting: miniImagenet-ResNet12-FSTF_cosine-aug-feti-5w1s    Test Acc = 49.39% +- 0.80% 
+Time: 20220715@153044   Setting: miniImagenet-ResNet12-FSTF_softmax-feti-5w5s       Test Acc = 57.03% +- 0.67% 
+Time: 20220715@165822   Setting: miniImagenet-ResNet12-FSTF_softmax-aug-feti-5w5s   Test Acc = 57.16% +- 0.70% 
+Time: 20220715@180620   Setting: miniImagenet-ResNet12-FSTF_cosine-feti-5w5s        Test Acc = 70.26% +- 0.66% 
+Time: 20220715@191405   Setting: miniImagenet-ResNet12-FSTF_cosine-aug-feti-5w5s    Test Acc = 73.00% +- 0.68% 
+
+Time: 20220715@222840   Setting: miniImagenet-ResNet18-FSTF_softmax-feti-5w1s       Test Acc = 40.06% +- 0.73% 
+Time: 20220715@233441   Setting: miniImagenet-ResNet18-FSTF_softmax-aug-feti-5w1s   Test Acc = 47.72% +- 0.79% 
+Time: 20220716@004046   Setting: miniImagenet-ResNet18-FSTF_cosine-feti-5w1s        Test Acc = 55.67% +- 0.86% 
+Time: 20220716@014711   Setting: miniImagenet-ResNet18-FSTF_cosine-aug-feti-5w1s    Test Acc = 41.84% +- 0.79% 
+Time: 20220716@054804   Setting: miniImagenet-ResNet18-FSTF_softmax-feti-5w5s       Test Acc = 58.20% +- 0.71% 
+Time: 20220716@071148   Setting: miniImagenet-ResNet18-FSTF_softmax-aug-feti-5w5s   Test Acc = 62.71% +- 0.71% 
+Time: 20220716@083222   Setting: miniImagenet-ResNet18-FSTF_cosine-feti-5w5s        Test Acc = 71.34% +- 0.67% 
+Time: 20220716@095231   Setting: miniImagenet-ResNet18-FSTF_cosine-aug-feti-5w5s    Test Acc = 73.42% +- 0.67% 
 
 ###########################################################################################################
 FewShotTransFormer - CUB - Conv4/Conv6/ResNet18/ResNet34 - 5w1/5s - aug
 ###########################################################################################################
-Time: 20220626@002752   Setting: CUB-Conv4-FSTF_softmax-5w1s                   Test Acc = 53.44% +- 0.98% 
-Time: 20220626@004524   Setting: CUB-Conv4-FSTF_softmax-aug-5w1s               Test Acc = 51.50% +- 0.93% 
-Time: 20220626@010311   Setting: CUB-Conv4-FSTF_cosine-5w1s                    Test Acc = 56.41% +- 0.94% 
-Time: 20220626@012016   Setting: CUB-Conv4-FSTF_cosine-aug-5w1s                Test Acc = 56.34% +- 0.90% 
-Time: 20220626@013745   Setting: CUB-Conv4-FSTF_softmax-5w5s                   Test Acc = 66.14% +- 0.76% 
-Time: 20220626@015837   Setting: CUB-Conv4-FSTF_softmax-aug-5w5s               Test Acc = 69.73% +- 0.77% 
-Time: 20220626@022005   Setting: CUB-Conv4-FSTF_cosine-5w5s                    Test Acc = 67.12% +- 0.78% 
-Time: 20220626@024107   Setting: CUB-Conv4-FSTF_cosine-aug-5w5s                Test Acc = 75.88% +- 0.73% 
+Time: 20220626@002752   Setting: CUB-Conv4-FSTF_softmax-5w1s                        Test Acc = 53.44% +- 0.98% 
+Time: 20220626@004524   Setting: CUB-Conv4-FSTF_softmax-aug-5w1s                    Test Acc = 51.50% +- 0.93% 
+Time: 20220626@010311   Setting: CUB-Conv4-FSTF_cosine-5w1s                         Test Acc = 56.41% +- 0.94% 
+Time: 20220626@012016   Setting: CUB-Conv4-FSTF_cosine-aug-5w1s                     Test Acc = 56.34% +- 0.90% 
+Time: 20220626@013745   Setting: CUB-Conv4-FSTF_softmax-5w5s                        Test Acc = 66.14% +- 0.76% 
+Time: 20220626@015837   Setting: CUB-Conv4-FSTF_softmax-aug-5w5s                    Test Acc = 69.73% +- 0.77% 
+Time: 20220626@022005   Setting: CUB-Conv4-FSTF_cosine-5w5s                         Test Acc = 67.12% +- 0.78% 
+Time: 20220626@024107   Setting: CUB-Conv4-FSTF_cosine-aug-5w5s                     Test Acc = 75.88% +- 0.73% 
 
-Time: 20220626@030213   Setting: CUB-Conv6-FSTF_softmax-5w1s                   Test Acc = 55.41% +- 0.94% 
-Time: 20220626@031945   Setting: CUB-Conv6-FSTF_softmax-aug-5w1s               Test Acc = 48.61% +- 0.94% 
-Time: 20220626@033750   Setting: CUB-Conv6-FSTF_cosine-5w1s                    Test Acc = 55.27% +- 0.95% 
-Time: 20220626@035514   Setting: CUB-Conv6-FSTF_cosine-aug-5w1s                Test Acc = 55.68% +- 0.94% 
-Time: 20220626@041255   Setting: CUB-Conv6-FSTF_softmax-5w5s                   Test Acc = 65.87% +- 0.80% 
-Time: 20220626@043428   Setting: CUB-Conv6-FSTF_softmax-aug-5w5s               Test Acc = 71.62% +- 0.76% 
-Time: 20220626@045721   Setting: CUB-Conv6-FSTF_cosine-5w5s                    Test Acc = 66.90% +- 0.76% 
-Time: 20220626@051821   Setting: CUB-Conv6-FSTF_cosine-aug-5w5s                Test Acc = 76.93% +- 0.70% 
+Time: 20220626@030213   Setting: CUB-Conv6-FSTF_softmax-5w1s                        Test Acc = 55.41% +- 0.94% 
+Time: 20220626@031945   Setting: CUB-Conv6-FSTF_softmax-aug-5w1s                    Test Acc = 48.61% +- 0.94% 
+Time: 20220626@033750   Setting: CUB-Conv6-FSTF_cosine-5w1s                         Test Acc = 55.27% +- 0.95% 
+Time: 20220626@035514   Setting: CUB-Conv6-FSTF_cosine-aug-5w1s                     Test Acc = 55.68% +- 0.94% 
+Time: 20220626@041255   Setting: CUB-Conv6-FSTF_softmax-5w5s                        Test Acc = 65.87% +- 0.80% 
+Time: 20220626@043428   Setting: CUB-Conv6-FSTF_softmax-aug-5w5s                    Test Acc = 71.62% +- 0.76% 
+Time: 20220626@045721   Setting: CUB-Conv6-FSTF_cosine-5w5s                         Test Acc = 66.90% +- 0.76% 
+Time: 20220626@051821   Setting: CUB-Conv6-FSTF_cosine-aug-5w5s                     Test Acc = 76.93% +- 0.70% 
 
-Time: 20220628@210638   Setting: CUB-ResNet18-FSTF_softmax-5w1s                Test Acc = 74.69% +- 0.80% 
-Time: 20220628@215239   Setting: CUB-ResNet18-FSTF_softmax-aug-5w1s            Test Acc = 75.89% +- 0.78% 
-Time: 20220628@223844   Setting: CUB-ResNet18-FSTF_cosine-5w1s                 Test Acc = 77.72% +- 0.81% 
-Time: 20220628@232450   Setting: CUB-ResNet18-FSTF_cosine-aug-5w1s             Test Acc = 81.12% +- 0.79% 
-Time: 20220629@020414   Setting: CUB-ResNet18-FSTF_softmax-5w5s                Test Acc = 85.38% +- 0.55% 
-Time: 20220629@030150   Setting: CUB-ResNet18-FSTF_softmax-aug-5w5s            Test Acc = 88.06% +- 0.53% 
-Time: 20220629@035804   Setting: CUB-ResNet18-FSTF_cosine-5w5s                 Test Acc = 89.13% +- 0.48% 
-Time: 20220629@045413   Setting: CUB-ResNet18-FSTF_cosine-aug-5w5s             Test Acc = 91.96% +- 0.44% 
+Time: 20220628@210638   Setting: CUB-ResNet18-FSTF_softmax-5w1s                     Test Acc = 74.69% +- 0.80% 
+Time: 20220628@215239   Setting: CUB-ResNet18-FSTF_softmax-aug-5w1s                 Test Acc = 75.89% +- 0.78% 
+Time: 20220628@223844   Setting: CUB-ResNet18-FSTF_cosine-5w1s                      Test Acc = 77.72% +- 0.81% 
+Time: 20220628@232450   Setting: CUB-ResNet18-FSTF_cosine-aug-5w1s                  Test Acc = 81.12% +- 0.79% 
+Time: 20220629@020414   Setting: CUB-ResNet18-FSTF_softmax-5w5s                     Test Acc = 85.38% +- 0.55% 
+Time: 20220629@030150   Setting: CUB-ResNet18-FSTF_softmax-aug-5w5s                 Test Acc = 88.06% +- 0.53% 
+Time: 20220629@035804   Setting: CUB-ResNet18-FSTF_cosine-5w5s                      Test Acc = 89.13% +- 0.48% 
+Time: 20220629@045413   Setting: CUB-ResNet18-FSTF_cosine-aug-5w5s                  Test Acc = 91.96% +- 0.44% 
 
-Time: 20220629@072206   Setting: CUB-ResNet34-FSTF_softmax-5w1s                Test Acc = 75.97% +- 0.85% 
-Time: 20220629@080926   Setting: CUB-ResNet34-FSTF_softmax-aug-5w1s            Test Acc = 77.01% +- 0.85% 
-Time: 20220629@085716   Setting: CUB-ResNet34-FSTF_cosine-5w1s                 Test Acc = 77.72% +- 0.83% 
-Time: 20220629@094427   Setting: CUB-ResNet34-FSTF_cosine-aug-5w1s             Test Acc = 81.23% +- 0.77% 
-Time: 20220629@122206   Setting: CUB-ResNet34-FSTF_softmax-5w5s                Test Acc = 87.03% +- 0.54% 
-Time: 20220629@131900   Setting: CUB-ResNet34-FSTF_softmax-aug-5w5s            Test Acc = 89.05% +- 0.51% 
-Time: 20220629@141543   Setting: CUB-ResNet34-FSTF_cosine-5w5s                 Test Acc = 89.63% +- 0.42% 
-Time: 20220629@151145   Setting: CUB-ResNet34-FSTF_cosine-aug-5w5s             Test Acc = 92.35% +- 0.37% 
+Time: 20220629@072206   Setting: CUB-ResNet34-FSTF_softmax-5w1s                     Test Acc = 75.97% +- 0.85% 
+Time: 20220629@080926   Setting: CUB-ResNet34-FSTF_softmax-aug-5w1s                 Test Acc = 77.01% +- 0.85% 
+Time: 20220629@085716   Setting: CUB-ResNet34-FSTF_cosine-5w1s                      Test Acc = 77.72% +- 0.83% 
+Time: 20220629@094427   Setting: CUB-ResNet34-FSTF_cosine-aug-5w1s                  Test Acc = 81.23% +- 0.77% 
+Time: 20220629@122206   Setting: CUB-ResNet34-FSTF_softmax-5w5s                     Test Acc = 87.03% +- 0.54% 
+Time: 20220629@131900   Setting: CUB-ResNet34-FSTF_softmax-aug-5w5s                 Test Acc = 89.05% +- 0.51% 
+Time: 20220629@141543   Setting: CUB-ResNet34-FSTF_cosine-5w5s                      Test Acc = 89.63% +- 0.42% 
+Time: 20220629@151145   Setting: CUB-ResNet34-FSTF_cosine-aug-5w5s                  Test Acc = 92.35% +- 0.37% 
 
 ###########################################################################################################
 FewShotTransFormer - CIFAR - Conv4/Conv6/ResNet18/ResNet34 - 5w1/5s - aug
 ###########################################################################################################
-Time: 20220630@231221   Setting: CIFAR-Conv4-FSTF_softmax-5w1s                 Test Acc = 48.57% +- 0.92% 
-Time: 20220630@231648   Setting: CIFAR-Conv4-FSTF_softmax-aug-5w1s             Test Acc = 40.95% +- 0.86% 
-Time: 20220630@232209   Setting: CIFAR-Conv4-FSTF_cosine-5w1s                  Test Acc = 53.86% +- 0.90% 
-Time: 20220630@232610   Setting: CIFAR-Conv4-FSTF_cosine-aug-5w1s              Test Acc = 47.85% +- 0.97% 
-Time: 20220630@233017   Setting: CIFAR-Conv4-FSTF_softmax-5w5s                 Test Acc = 66.22% +- 0.78% 
-Time: 20220630@233521   Setting: CIFAR-Conv4-FSTF_softmax-aug-5w5s             Test Acc = 64.31% +- 0.77% 
-Time: 20220630@233959   Setting: CIFAR-Conv4-FSTF_cosine-5w5s                  Test Acc = 69.03% +- 0.77% 
-Time: 20220630@234430   Setting: CIFAR-Conv4-FSTF_cosine-aug-5w5s              Test Acc = 68.35% +- 0.78%
+Time: 20220630@231221   Setting: CIFAR-Conv4-FSTF_softmax-5w1s                      Test Acc = 48.57% +- 0.92% 
+Time: 20220630@231648   Setting: CIFAR-Conv4-FSTF_softmax-aug-5w1s                  Test Acc = 40.95% +- 0.86% 
+Time: 20220630@232209   Setting: CIFAR-Conv4-FSTF_cosine-5w1s                       Test Acc = 53.86% +- 0.90% 
+Time: 20220630@232610   Setting: CIFAR-Conv4-FSTF_cosine-aug-5w1s                   Test Acc = 47.85% +- 0.97% 
+Time: 20220630@233017   Setting: CIFAR-Conv4-FSTF_softmax-5w5s                      Test Acc = 66.22% +- 0.78% 
+Time: 20220630@233521   Setting: CIFAR-Conv4-FSTF_softmax-aug-5w5s                  Test Acc = 64.31% +- 0.77% 
+Time: 20220630@233959   Setting: CIFAR-Conv4-FSTF_cosine-5w5s                       Test Acc = 69.03% +- 0.77% 
+Time: 20220630@234430   Setting: CIFAR-Conv4-FSTF_cosine-aug-5w5s                   Test Acc = 68.35% +- 0.78%
 
-Time: 20220630@234901   Setting: CIFAR-Conv6-FSTF_softmax-5w1s                 Test Acc = 46.66% +- 0.94% 
-Time: 20220630@235305   Setting: CIFAR-Conv6-FSTF_softmax-aug-5w1s             Test Acc = 43.74% +- 0.91% 
-Time: 20220630@235711   Setting: CIFAR-Conv6-FSTF_cosine-5w1s                  Test Acc = 51.04% +- 0.94% 
-Time: 20220701@000144   Setting: CIFAR-Conv6-FSTF_cosine-aug-5w1s              Test Acc = 45.06% +- 0.95% 
-Time: 20220701@000619   Setting: CIFAR-Conv6-FSTF_softmax-5w5s                 Test Acc = 65.43% +- 0.76% 
-Time: 20220701@001059   Setting: CIFAR-Conv6-FSTF_softmax-aug-5w5s             Test Acc = 60.41% +- 0.78% 
-Time: 20220701@001533   Setting: CIFAR-Conv6-FSTF_cosine-5w5s                  Test Acc = 68.76% +- 0.73% 
-Time: 20220701@002008   Setting: CIFAR-Conv6-FSTF_cosine-aug-5w5s              Test Acc = 67.40% +- 0.79% 
+Time: 20220630@234901   Setting: CIFAR-Conv6-FSTF_softmax-5w1s                      Test Acc = 46.66% +- 0.94% 
+Time: 20220630@235305   Setting: CIFAR-Conv6-FSTF_softmax-aug-5w1s                  Test Acc = 43.74% +- 0.91% 
+Time: 20220630@235711   Setting: CIFAR-Conv6-FSTF_cosine-5w1s                       Test Acc = 51.04% +- 0.94% 
+Time: 20220701@000144   Setting: CIFAR-Conv6-FSTF_cosine-aug-5w1s                   Test Acc = 45.06% +- 0.95% 
+Time: 20220701@000619   Setting: CIFAR-Conv6-FSTF_softmax-5w5s                      Test Acc = 65.43% +- 0.76% 
+Time: 20220701@001059   Setting: CIFAR-Conv6-FSTF_softmax-aug-5w5s                  Test Acc = 60.41% +- 0.78% 
+Time: 20220701@001533   Setting: CIFAR-Conv6-FSTF_cosine-5w5s                       Test Acc = 68.76% +- 0.73% 
+Time: 20220701@002008   Setting: CIFAR-Conv6-FSTF_cosine-aug-5w5s                   Test Acc = 67.40% +- 0.79% 
 
-Time: 20220701@004205   Setting: CIFAR-ResNet18-FSTF_softmax-5w1s              Test Acc = 63.40% +- 0.88% 
-Time: 20220701@005053   Setting: CIFAR-ResNet18-FSTF_softmax-aug-5w1s          Test Acc = 62.41% +- 0.92% 
-Time: 20220701@005959   Setting: CIFAR-ResNet18-FSTF_cosine-5w1s               Test Acc = 64.29% +- 0.91% 
-Time: 20220701@010906   Setting: CIFAR-ResNet18-FSTF_cosine-aug-5w1s           Test Acc = 64.49% +- 0.90% 
-Time: 20220701@013639   Setting: CIFAR-ResNet18-FSTF_softmax-5w5s              Test Acc = 77.98% +- 0.68% 
-Time: 20220701@014656   Setting: CIFAR-ResNet18-FSTF_softmax-aug-5w5s          Test Acc = 78.17% +- 0.68% 
-Time: 20220701@015702   Setting: CIFAR-ResNet18-FSTF_cosine-5w5s               Test Acc = 80.57% +- 0.66% 
-Time: 20220701@020714   Setting: CIFAR-ResNet18-FSTF_cosine-aug-5w5s           Test Acc = 81.46% +- 0.65% 
+Time: 20220701@004205   Setting: CIFAR-ResNet18-FSTF_softmax-5w1s                   Test Acc = 63.40% +- 0.88% 
+Time: 20220701@005053   Setting: CIFAR-ResNet18-FSTF_softmax-aug-5w1s               Test Acc = 62.41% +- 0.92% 
+Time: 20220701@005959   Setting: CIFAR-ResNet18-FSTF_cosine-5w1s                    Test Acc = 64.29% +- 0.91% 
+Time: 20220701@010906   Setting: CIFAR-ResNet18-FSTF_cosine-aug-5w1s                Test Acc = 64.49% +- 0.90% 
+Time: 20220701@013639   Setting: CIFAR-ResNet18-FSTF_softmax-5w5s                   Test Acc = 77.98% +- 0.68% 
+Time: 20220701@014656   Setting: CIFAR-ResNet18-FSTF_softmax-aug-5w5s               Test Acc = 78.17% +- 0.68% 
+Time: 20220701@015702   Setting: CIFAR-ResNet18-FSTF_cosine-5w5s                    Test Acc = 80.57% +- 0.66% 
+Time: 20220701@020714   Setting: CIFAR-ResNet18-FSTF_cosine-aug-5w5s                Test Acc = 81.46% +- 0.65% 
 
-Time: 20220701@023815   Setting: CIFAR-ResNet34-FSTF_softmax-5w1s              Test Acc = 63.05% +- 0.88% 
-Time: 20220701@024932   Setting: CIFAR-ResNet34-FSTF_softmax-aug-5w1s          Test Acc = 62.14% +- 0.91% 
-Time: 20220701@030048   Setting: CIFAR-ResNet34-FSTF_cosine-5w1s               Test Acc = 65.67% +- 0.88% 
-Time: 20220701@031209   Setting: CIFAR-ResNet34-FSTF_cosine-aug-5w1s           Test Acc = 67.06% +- 0.89% 
-Time: 20220701@034725   Setting: CIFAR-ResNet34-FSTF_softmax-5w5s              Test Acc = 78.04% +- 0.67% 
-Time: 20220701@040018   Setting: CIFAR-ResNet34-FSTF_softmax-aug-5w5s          Test Acc = 79.17% +- 0.65% 
-Time: 20220701@041316   Setting: CIFAR-ResNet34-FSTF_cosine-5w5s               Test Acc = 81.44% +- 0.61% 
-Time: 20220701@042609   Setting: CIFAR-ResNet34-FSTF_cosine-aug-5w5s           Test Acc = 82.89% +- 0.61% 
+Time: 20220701@023815   Setting: CIFAR-ResNet34-FSTF_softmax-5w1s                   Test Acc = 63.05% +- 0.88% 
+Time: 20220701@024932   Setting: CIFAR-ResNet34-FSTF_softmax-aug-5w1s               Test Acc = 62.14% +- 0.91% 
+Time: 20220701@030048   Setting: CIFAR-ResNet34-FSTF_cosine-5w1s                    Test Acc = 65.67% +- 0.88% 
+Time: 20220701@031209   Setting: CIFAR-ResNet34-FSTF_cosine-aug-5w1s                Test Acc = 67.06% +- 0.89% 
+Time: 20220701@034725   Setting: CIFAR-ResNet34-FSTF_softmax-5w5s                   Test Acc = 78.04% +- 0.67% 
+Time: 20220701@040018   Setting: CIFAR-ResNet34-FSTF_softmax-aug-5w5s               Test Acc = 79.17% +- 0.65% 
+Time: 20220701@041316   Setting: CIFAR-ResNet34-FSTF_cosine-5w5s                    Test Acc = 81.44% +- 0.61% 
+Time: 20220701@042609   Setting: CIFAR-ResNet34-FSTF_cosine-aug-5w5s                Test Acc = 82.89% +- 0.61% 
 
 ###########################################################################################################
 FewShotTransFormer - Omniglot - Conv4/Conv6/ResNet18/ResNet34 - 5w1/5s
 ###########################################################################################################
-Time: 20220701@215923   Setting: omniglot-Conv4-FSTF_softmax-5w1s              Test Acc = 89.07% +- 0.72% 
-Time: 20220701@220707   Setting: omniglot-Conv4-FSTF_cosine-5w1s               Test Acc = 96.10% +- 0.37% 
-Time: 20220701@221417   Setting: omniglot-Conv4-FSTF_softmax-5w5s              Test Acc = 93.49% +- 0.46% 
-Time: 20220701@222204   Setting: omniglot-Conv4-FSTF_cosine-5w5s               Test Acc = 98.86% +- 0.12% 
+Time: 20220701@215923   Setting: Omniglot-Conv4-FSTF_softmax-5w1s                   Test Acc = 89.07% +- 0.72% 
+Time: 20220701@220707   Setting: Omniglot-Conv4-FSTF_cosine-5w1s                    Test Acc = 96.10% +- 0.37% 
+Time: 20220701@221417   Setting: Omniglot-Conv4-FSTF_softmax-5w5s                   Test Acc = 93.49% +- 0.46% 
+Time: 20220701@222204   Setting: Omniglot-Conv4-FSTF_cosine-5w5s                    Test Acc = 98.86% +- 0.12% 
 
-Time: 20220701@223102   Setting: omniglot-Conv6-FSTF_softmax-5w1s              Test Acc = 92.33% +- 0.59% 
-Time: 20220701@223828   Setting: omniglot-Conv6-FSTF_cosine-5w1s               Test Acc = 97.09% +- 0.31% 
-Time: 20220701@224554   Setting: omniglot-Conv6-FSTF_softmax-5w5s              Test Acc = 95.92% +- 0.33% 
-Time: 20220701@225406   Setting: omniglot-Conv6-FSTF_cosine-5w5s               Test Acc = 98.88% +- 0.13% 
+Time: 20220701@223102   Setting: Omniglot-Conv6-FSTF_softmax-5w1s                   Test Acc = 92.33% +- 0.59% 
+Time: 20220701@223828   Setting: Omniglot-Conv6-FSTF_cosine-5w1s                    Test Acc = 97.09% +- 0.31% 
+Time: 20220701@224554   Setting: Omniglot-Conv6-FSTF_softmax-5w5s                   Test Acc = 95.92% +- 0.33% 
+Time: 20220701@225406   Setting: Omniglot-Conv6-FSTF_cosine-5w5s                    Test Acc = 98.88% +- 0.13% 
 
-Time: 20220701@235610   Setting: omniglot-ResNet18-FSTF_softmax-5w1s           Test Acc = 90.49% +- 0.57% 
-Time: 20220702@002447   Setting: omniglot-ResNet18-FSTF_cosine-5w1s            Test Acc = 95.20% +- 0.39% 
-Time: 20220702@015943   Setting: omniglot-ResNet18-FSTF_softmax-5w5s           Test Acc = 96.62% +- 0.29% 
-Time: 20220702@023524   Setting: omniglot-ResNet18-FSTF_cosine-5w5s            Test Acc = 98.67% +- 0.14% 
+Time: 20220701@235610   Setting: Omniglot-ResNet18-FSTF_softmax-5w1s                Test Acc = 90.49% +- 0.57% 
+Time: 20220702@002447   Setting: Omniglot-ResNet18-FSTF_cosine-5w1s                 Test Acc = 95.20% +- 0.39% 
+Time: 20220702@015943   Setting: Omniglot-ResNet18-FSTF_softmax-5w5s                Test Acc = 96.62% +- 0.29% 
+Time: 20220702@023524   Setting: Omniglot-ResNet18-FSTF_cosine-5w5s                 Test Acc = 98.67% +- 0.14% 
 
-Time: 20220702@041830   Setting: omniglot-ResNet34-FSTF_softmax-5w1s           Test Acc = 91.40% +- 0.53% 
-Time: 20220702@045514   Setting: omniglot-ResNet34-FSTF_cosine-5w1s            Test Acc = 94.34% +- 0.41% 
-Time: 20220702@065411   Setting: omniglot-ResNet34-FSTF_softmax-5w5s           Test Acc = 96.64% +- 0.29% 
-Time: 20220702@073827   Setting: omniglot-ResNet34-FSTF_cosine-5w5s            Test Acc = 98.60% +- 0.15% 
+Time: 20220702@041830   Setting: Omniglot-ResNet34-FSTF_softmax-5w1s                Test Acc = 91.40% +- 0.53% 
+Time: 20220702@045514   Setting: Omniglot-ResNet34-FSTF_cosine-5w1s                 Test Acc = 94.34% +- 0.41% 
+Time: 20220702@065411   Setting: Omniglot-ResNet34-FSTF_softmax-5w5s                Test Acc = 96.64% +- 0.29% 
+Time: 20220702@073827   Setting: Omniglot-ResNet34-FSTF_cosine-5w5s                 Test Acc = 98.60% +- 0.15% 
 
 ###########################################################################################################
 FewShotTransFormer - Yoga - Conv4/Conv6/ResNet18/ResNet34 - 5w1/5s - aug
 ###########################################################################################################
-Time: 20220521@224735   Setting: Yoga-Conv4-FSTF_softmax-5w1s                  Test Acc = 47.39% +- 0.74% 
-Time: 20220522@103220   Setting: Yoga-Conv4-FSTF_softmax-aug-5w1s              Test Acc = 45.86% +- 0.84% 
-Time: 20220522@030330   Setting: Yoga-Conv4-FSTF_cosine-5w1s                   Test Acc = 49.87% +- 0.85% 
-Time: 20220522@105809   Setting: Yoga-Conv4-FSTF_cosine-aug-5w1s               Test Acc = 52.15% +- 0.79% 
-Time: 20220522@042537   Setting: Yoga-Conv4-FSTF_softmax-5w5s                  Test Acc = 54.71% +- 0.72% 
-Time: 20220522@044559   Setting: Yoga-Conv4-FSTF_softmax-aug-5w5s              Test Acc = 62.94% +- 0.63% 
-Time: 20220522@050646   Setting: Yoga-Conv4-FSTF_cosine-5w5s                   Test Acc = 63.69% +- 0.63% 
-Time: 20220522@052702   Setting: Yoga-Conv4-FSTF_cosine-aug-5w5s               Test Acc = 71.10% +- 0.58% 
+Time: 20220521@224735   Setting: Yoga-Conv4-FSTF_softmax-5w1s                       Test Acc = 47.39% +- 0.74% 
+Time: 20220522@103220   Setting: Yoga-Conv4-FSTF_softmax-aug-5w1s                   Test Acc = 45.86% +- 0.84% 
+Time: 20220522@030330   Setting: Yoga-Conv4-FSTF_cosine-5w1s                        Test Acc = 49.87% +- 0.85% 
+Time: 20220522@105809   Setting: Yoga-Conv4-FSTF_cosine-aug-5w1s                    Test Acc = 52.15% +- 0.79% 
+Time: 20220522@042537   Setting: Yoga-Conv4-FSTF_softmax-5w5s                       Test Acc = 54.71% +- 0.72% 
+Time: 20220522@044559   Setting: Yoga-Conv4-FSTF_softmax-aug-5w5s                   Test Acc = 62.94% +- 0.63% 
+Time: 20220522@050646   Setting: Yoga-Conv4-FSTF_cosine-5w5s                        Test Acc = 63.69% +- 0.63% 
+Time: 20220522@052702   Setting: Yoga-Conv4-FSTF_cosine-aug-5w5s                    Test Acc = 71.10% +- 0.58% 
 
-Time: 20220522@160521   Setting: Yoga-Conv6-FSTF_softmax-5w1s                  Test Acc = 51.96% +- 0.91% 
-Time: 20220522@162603   Setting: Yoga-Conv6-FSTF_softmax-aug-5w1s              Test Acc = 42.46% +- 0.77% 
-Time: 20220522@164449   Setting: Yoga-Conv6-FSTF_cosine-5w1s                   Test Acc = 47.89% +- 0.82%
-Time: 20220522@170314   Setting: Yoga-Conv6-FSTF_cosine-aug-5w1s               Test Acc = 47.28% +- 0.85% 
-Time: 20220522@183015   Setting: Yoga-Conv6-FSTF_softmax-5w5s                  Test Acc = 60.24% +- 0.70% 
-Time: 20220522@185205   Setting: Yoga-Conv6-FSTF_softmax-aug-5w5s              Test Acc = 62.00% +- 0.65% 
-Time: 20220522@191434   Setting: Yoga-Conv6-FSTF_cosine-5w5s                   Test Acc = 63.95% +- 0.63% 
-Time: 20220522@193704   Setting: Yoga-Conv6-FSTF_cosine-aug-5w5s               Test Acc = 66.70% +- 0.66% 
+Time: 20220522@160521   Setting: Yoga-Conv6-FSTF_softmax-5w1s                       Test Acc = 51.96% +- 0.91% 
+Time: 20220522@162603   Setting: Yoga-Conv6-FSTF_softmax-aug-5w1s                   Test Acc = 42.46% +- 0.77% 
+Time: 20220522@164449   Setting: Yoga-Conv6-FSTF_cosine-5w1s                        Test Acc = 47.89% +- 0.82%
+Time: 20220522@170314   Setting: Yoga-Conv6-FSTF_cosine-aug-5w1s                    Test Acc = 47.28% +- 0.85% 
+Time: 20220522@183015   Setting: Yoga-Conv6-FSTF_softmax-5w5s                       Test Acc = 60.24% +- 0.70% 
+Time: 20220522@185205   Setting: Yoga-Conv6-FSTF_softmax-aug-5w5s                   Test Acc = 62.00% +- 0.65% 
+Time: 20220522@191434   Setting: Yoga-Conv6-FSTF_cosine-5w5s                        Test Acc = 63.95% +- 0.63% 
+Time: 20220522@193704   Setting: Yoga-Conv6-FSTF_cosine-aug-5w5s                    Test Acc = 66.70% +- 0.66% 
 
-Time: 20220629@182645   Setting: Yoga-ResNet18-FSTF_softmax-5w1s               Test Acc = 61.40% +- 0.82% 
-Time: 20220629@191311   Setting: Yoga-ResNet18-FSTF_softmax-aug-5w1s           Test Acc = 51.89% +- 0.75% 
-Time: 20220629@195737   Setting: Yoga-ResNet18-FSTF_cosine-5w1s                Test Acc = 66.38% +- 0.77% 
-Time: 20220629@204114   Setting: Yoga-ResNet18-FSTF_cosine-aug-5w1s            Test Acc = 57.98% +- 0.78% 
-Time: 20220629@231057   Setting: Yoga-ResNet18-FSTF_softmax-5w5s               Test Acc = 69.15% +- 0.62% 
-Time: 20220630@000404   Setting: Yoga-ResNet18-FSTF_softmax-aug-5w5s           Test Acc = 66.21% +- 0.59% 
-Time: 20220630@005707   Setting: Yoga-ResNet18-FSTF_cosine-5w5s                Test Acc = 80.34% +- 0.52% 
-Time: 20220630@015033   Setting: Yoga-ResNet18-FSTF_cosine-aug-5w5s            Test Acc = 73.58% +- 0.52% 
+Time: 20220629@182645   Setting: Yoga-ResNet18-FSTF_softmax-5w1s                    Test Acc = 61.40% +- 0.82% 
+Time: 20220629@191311   Setting: Yoga-ResNet18-FSTF_softmax-aug-5w1s                Test Acc = 51.89% +- 0.75% 
+Time: 20220629@195737   Setting: Yoga-ResNet18-FSTF_cosine-5w1s                     Test Acc = 66.38% +- 0.77% 
+Time: 20220629@204114   Setting: Yoga-ResNet18-FSTF_cosine-aug-5w1s                 Test Acc = 57.98% +- 0.78% 
+Time: 20220629@231057   Setting: Yoga-ResNet18-FSTF_softmax-5w5s                    Test Acc = 69.15% +- 0.62% 
+Time: 20220630@000404   Setting: Yoga-ResNet18-FSTF_softmax-aug-5w5s                Test Acc = 66.21% +- 0.59% 
+Time: 20220630@005707   Setting: Yoga-ResNet18-FSTF_cosine-5w5s                     Test Acc = 80.34% +- 0.52% 
+Time: 20220630@015033   Setting: Yoga-ResNet18-FSTF_cosine-aug-5w5s                 Test Acc = 73.58% +- 0.52% 
 
-Time: 20220630@041309   Setting: Yoga-ResNet34-FSTF_softmax-5w1s               Test Acc = 58.89% +- 0.79% 
-Time: 20220630@045959   Setting: Yoga-ResNet34-FSTF_softmax-aug-5w1s           Test Acc = 55.08% +- 0.76% 
-Time: 20220630@054654   Setting: Yoga-ResNet34-FSTF_cosine-5w1s                Test Acc = 64.52% +- 0.84% 
-Time: 20220630@063347   Setting: Yoga-ResNet34-FSTF_cosine-aug-5w1s            Test Acc = 59.76% +- 0.82% 
-Time: 20220630@091044   Setting: Yoga-ResNet34-FSTF_softmax-5w5s               Test Acc = 71.12% +- 0.62% 
-Time: 20220630@100816   Setting: Yoga-ResNet34-FSTF_softmax-aug-5w5s           Test Acc = 70.12% +- 0.53% 
-Time: 20220630@110334   Setting: Yoga-ResNet34-FSTF_cosine-5w5s                Test Acc = 77.66% +- 0.57% 
-Time: 20220630@115932   Setting: Yoga-ResNet34-FSTF_cosine-aug-5w5s            Test Acc = 77.92% +- 0.46% 
+Time: 20220630@041309   Setting: Yoga-ResNet34-FSTF_softmax-5w1s                    Test Acc = 58.89% +- 0.79% 
+Time: 20220630@045959   Setting: Yoga-ResNet34-FSTF_softmax-aug-5w1s                Test Acc = 55.08% +- 0.76% 
+Time: 20220630@054654   Setting: Yoga-ResNet34-FSTF_cosine-5w1s                     Test Acc = 64.52% +- 0.84% 
+Time: 20220630@063347   Setting: Yoga-ResNet34-FSTF_cosine-aug-5w1s                 Test Acc = 59.76% +- 0.82% 
+Time: 20220630@091044   Setting: Yoga-ResNet34-FSTF_softmax-5w5s                    Test Acc = 71.12% +- 0.62% 
+Time: 20220630@100816   Setting: Yoga-ResNet34-FSTF_softmax-aug-5w5s                Test Acc = 70.12% +- 0.53% 
+Time: 20220630@110334   Setting: Yoga-ResNet34-FSTF_cosine-5w5s                     Test Acc = 77.66% +- 0.57% 
+Time: 20220630@115932   Setting: Yoga-ResNet34-FSTF_cosine-aug-5w5s                 Test Acc = 77.92% +- 0.46% 
 
 ###########################################################################################################
 CrossTransformer - miniImagenet/CUB/CIFAR/Yoga/Omniglot - ResNet18/ResNet34 - 5w1/5s
 ###########################################################################################################
-Time: 20220627@121111   Setting: miniImagenet-ResNet18-CTX_softmax-5w1s        Test Acc = 62.37% +- 0.93% 
-Time: 20220627@130217   Setting: miniImagenet-ResNet18-CTX_cosine-5w1s         Test Acc = 77.21% +- 0.68% 
-Time: 20220627@170456   Setting: miniImagenet-ResNet18-CTX_softmax-5w5s        Test Acc = 63.09% +- 0.80% 
-Time: 20220627@180510   Setting: miniImagenet-ResNet18-CTX_cosine-5w5s         Test Acc = 92.18% +- 0.31%
-Time: 20220627@230849   Setting: miniImagenet-ResNet34-CTX_softmax-5w1s        Test Acc = 65.08% +- 0.90% 
-Time: 20220627@235713   Setting: miniImagenet-ResNet34-CTX_cosine-5w1s         Test Acc = 82.09% +- 0.65% 
-Time: 20220628@084142   Setting: miniImagenet-ResNet34-CTX_softmax-5w5s        Test Acc = 65.66% +- 0.83% 
-Time: 20220628@094127   Setting: miniImagenet-ResNet34-CTX_cosine-5w5s         Test Acc = 93.41% +- 0.28% 
+Time: 20220627@121111   Setting: miniImagenet-ResNet18-CTX_softmax-5w1s             Test Acc = 62.37% +- 0.93% 
+Time: 20220627@130217   Setting: miniImagenet-ResNet18-CTX_cosine-5w1s              Test Acc = 77.21% +- 0.68% 
+Time: 20220627@170456   Setting: miniImagenet-ResNet18-CTX_softmax-5w5s             Test Acc = 63.09% +- 0.80% 
+Time: 20220627@180510   Setting: miniImagenet-ResNet18-CTX_cosine-5w5s              Test Acc = 92.18% +- 0.31%
+Time: 20220627@230849   Setting: miniImagenet-ResNet34-CTX_softmax-5w1s             Test Acc = 65.08% +- 0.90% 
+Time: 20220627@235713   Setting: miniImagenet-ResNet34-CTX_cosine-5w1s              Test Acc = 82.09% +- 0.65% 
+Time: 20220628@084142   Setting: miniImagenet-ResNet34-CTX_softmax-5w5s             Test Acc = 65.66% +- 0.83% 
+Time: 20220628@094127   Setting: miniImagenet-ResNet34-CTX_cosine-5w5s              Test Acc = 93.41% +- 0.28% 
 
-Time: 20220628@193159   Setting: CUB-ResNet18-CTX_softmax-5w1s                 Test Acc = 61.24% +- 0.97% 
-Time: 20220628@201946   Setting: CUB-ResNet18-CTX_cosine-5w1s                  Test Acc = 73.12% +- 0.79%
-Time: 20220629@001126   Setting: CUB-ResNet18-CTX_softmax-5w5s                 Test Acc = 62.12% +- 0.88% 
-Time: 20220629@010734   Setting: CUB-ResNet18-CTX_cosine-5w5s                  Test Acc = 85.71% +- 0.52%  
-Time: 20220629@055049   Setting: CUB-ResNet34-CTX_softmax-5w1s                 Test Acc = 64.28% +- 0.90% 
-Time: 20220629@063636   Setting: CUB-ResNet34-CTX_cosine-5w1s                  Test Acc = 76.54% +- 0.75%
-Time: 20220629@103220   Setting: CUB-ResNet34-CTX_softmax-5w5s                 Test Acc = 66.02% +- 0.84% 
-Time: 20220629@112702   Setting: CUB-ResNet34-CTX_cosine-5w5s                  Test Acc = 88.15% +- 0.48% 
+Time: 20220628@193159   Setting: CUB-ResNet18-CTX_softmax-5w1s                      Test Acc = 61.24% +- 0.97% 
+Time: 20220628@201946   Setting: CUB-ResNet18-CTX_cosine-5w1s                       Test Acc = 73.12% +- 0.79%
+Time: 20220629@001126   Setting: CUB-ResNet18-CTX_softmax-5w5s                      Test Acc = 62.12% +- 0.88% 
+Time: 20220629@010734   Setting: CUB-ResNet18-CTX_cosine-5w5s                       Test Acc = 85.71% +- 0.52%  
+Time: 20220629@055049   Setting: CUB-ResNet34-CTX_softmax-5w1s                      Test Acc = 64.28% +- 0.90% 
+Time: 20220629@063636   Setting: CUB-ResNet34-CTX_cosine-5w1s                       Test Acc = 76.54% +- 0.75%
+Time: 20220629@103220   Setting: CUB-ResNet34-CTX_softmax-5w5s                      Test Acc = 66.02% +- 0.84% 
+Time: 20220629@112702   Setting: CUB-ResNet34-CTX_cosine-5w5s                       Test Acc = 88.15% +- 0.48% 
 
-Time: 20220701@002457   Setting: CIFAR-ResNet18-CTX_softmax-5w1s               Test Acc = 41.16% +- 0.71% 
-Time: 20220701@003338   Setting: CIFAR-ResNet18-CTX_cosine-5w1s                Test Acc = 60.78% +- 0.78% 
-Time: 20220701@011804   Setting: CIFAR-ResNet18-CTX_softmax-5w5s               Test Acc = 43.05% +- 0.68% 
-Time: 20220701@012720   Setting: CIFAR-ResNet18-CTX_cosine-5w5s                Test Acc = 73.97% +- 0.65% 
-Time: 20220701@021723   Setting: CIFAR-ResNet34-CTX_softmax-5w1s               Test Acc = 44.54% +- 0.81% 
-Time: 20220701@022749   Setting: CIFAR-ResNet34-CTX_cosine-5w1s                Test Acc = 61.82% +- 0.80% 
-Time: 20220701@032326   Setting: CIFAR-ResNet34-CTX_softmax-5w5s               Test Acc = 48.01% +- 0.73% 
-Time: 20220701@033525   Setting: CIFAR-ResNet34-CTX_cosine-5w5s                Test Acc = 74.83% +- 0.64% 
+Time: 20220701@002457   Setting: CIFAR-ResNet18-CTX_softmax-5w1s                    Test Acc = 41.16% +- 0.71% 
+Time: 20220701@003338   Setting: CIFAR-ResNet18-CTX_cosine-5w1s                     Test Acc = 60.78% +- 0.78% 
+Time: 20220701@011804   Setting: CIFAR-ResNet18-CTX_softmax-5w5s                    Test Acc = 43.05% +- 0.68% 
+Time: 20220701@012720   Setting: CIFAR-ResNet18-CTX_cosine-5w5s                     Test Acc = 73.97% +- 0.65% 
+Time: 20220701@021723   Setting: CIFAR-ResNet34-CTX_softmax-5w1s                    Test Acc = 44.54% +- 0.81% 
+Time: 20220701@022749   Setting: CIFAR-ResNet34-CTX_cosine-5w1s                     Test Acc = 61.82% +- 0.80% 
+Time: 20220701@032326   Setting: CIFAR-ResNet34-CTX_softmax-5w5s                    Test Acc = 48.01% +- 0.73% 
+Time: 20220701@033525   Setting: CIFAR-ResNet34-CTX_cosine-5w5s                     Test Acc = 74.83% +- 0.64% 
 
-Time: 20220701@230216   Setting: omniglot-ResNet18-CTX_softmax-5w1s            Test Acc = 84.40% +- 0.71% 
-Time: 20220701@232853   Setting: omniglot-ResNet18-CTX_cosine-5w1s             Test Acc = 91.61% +- 0.48% 
-Time: 20220702@005338   Setting: omniglot-ResNet18-CTX_softmax-5w5s            Test Acc = 85.00% +- 0.65% 
-Time: 20220702@012645   Setting: omniglot-ResNet18-CTX_cosine-5w5s             Test Acc = 96.14% +- 0.24% 
-Time: 20220702@031108   Setting: omniglot-ResNet34-CTX_softmax-5w1s            Test Acc = 86.46% +- 0.68% 
-Time: 20220702@034458   Setting: omniglot-ResNet34-CTX_cosine-5w1s             Test Acc = 91.10% +- 0.49% 
-Time: 20220702@053110   Setting: omniglot-ResNet34-CTX_softmax-5w5s            Test Acc = 87.43% +- 0.59% 
-Time: 20220702@061223   Setting: omniglot-ResNet34-CTX_cosine-5w5s             Test Acc = 96.04% +- 0.25% 
+Time: 20220701@230216   Setting: Omniglot-ResNet18-CTX_softmax-5w1s                 Test Acc = 84.40% +- 0.71% 
+Time: 20220701@232853   Setting: Omniglot-ResNet18-CTX_cosine-5w1s                  Test Acc = 91.61% +- 0.48% 
+Time: 20220702@005338   Setting: Omniglot-ResNet18-CTX_softmax-5w5s                 Test Acc = 85.00% +- 0.65% 
+Time: 20220702@012645   Setting: Omniglot-ResNet18-CTX_cosine-5w5s                  Test Acc = 96.14% +- 0.24% 
+Time: 20220702@031108   Setting: Omniglot-ResNet34-CTX_softmax-5w1s                 Test Acc = 86.46% +- 0.68% 
+Time: 20220702@034458   Setting: Omniglot-ResNet34-CTX_cosine-5w1s                  Test Acc = 91.10% +- 0.49% 
+Time: 20220702@053110   Setting: Omniglot-ResNet34-CTX_softmax-5w5s                 Test Acc = 87.43% +- 0.59% 
+Time: 20220702@061223   Setting: Omniglot-ResNet34-CTX_cosine-5w5s                  Test Acc = 96.04% +- 0.25% 
 
-Time: 20220629@165602   Setting: Yoga-ResNet18-CTX_softmax-5w1s                Test Acc = 49.83% +- 0.79% 
-Time: 20220629@174312   Setting: Yoga-ResNet18-CTX_cosine-5w1s                 Test Acc = 59.99% +- 0.73% 
-Time: 20220629@212450   Setting: Yoga-ResNet18-CTX_softmax-5w5s                Test Acc = 54.88% +- 0.72% 
-Time: 20220629@221738   Setting: Yoga-ResNet18-CTX_cosine-5w5s                 Test Acc = 76.61% +- 0.53% 
-Time: 20220630@024351   Setting: Yoga-ResNet34-CTX_softmax-5w1s                Test Acc = 53.09% +- 0.79% 
-Time: 20220630@032825   Setting: Yoga-ResNet34-CTX_cosine-5w1s                 Test Acc = 63.12% +- 0.71% 
-Time: 20220630@072030   Setting: Yoga-ResNet34-CTX_softmax-5w5s                Test Acc = 55.44% +- 0.72% 
-Time: 20220630@081439   Setting: Yoga-ResNet34-CTX_cosine-5w5s                 Test Acc = 77.80% +- 0.52% 
+Time: 20220629@165602   Setting: Yoga-ResNet18-CTX_softmax-5w1s                     Test Acc = 49.83% +- 0.79% 
+Time: 20220629@174312   Setting: Yoga-ResNet18-CTX_cosine-5w1s                      Test Acc = 59.99% +- 0.73% 
+Time: 20220629@212450   Setting: Yoga-ResNet18-CTX_softmax-5w5s                     Test Acc = 54.88% +- 0.72% 
+Time: 20220629@221738   Setting: Yoga-ResNet18-CTX_cosine-5w5s                      Test Acc = 76.61% +- 0.53% 
+Time: 20220630@024351   Setting: Yoga-ResNet34-CTX_softmax-5w1s                     Test Acc = 53.09% +- 0.79% 
+Time: 20220630@032825   Setting: Yoga-ResNet34-CTX_cosine-5w1s                      Test Acc = 63.12% +- 0.71% 
+Time: 20220630@072030   Setting: Yoga-ResNet34-CTX_softmax-5w5s                     Test Acc = 55.44% +- 0.72% 
+Time: 20220630@081439   Setting: Yoga-ResNet34-CTX_cosine-5w5s                      Test Acc = 77.80% +- 0.52% 

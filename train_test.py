@@ -125,9 +125,9 @@ if __name__ == '__main__':
     pp.pprint(vars(params))
     print()
         
-    project_name = "Few-Shot_TransFormer"              # use for official testing
+    project_name = "Few-Shot_TransFormer"            
     
-    if params.dataset == 'omniglot': params.n_query = 15
+    if params.dataset == 'Omniglot': params.n_query = 15
     if params.wandb:
 
         wandb_name = params.method + "_" + params.backbone + "_" + params.dataset + \
@@ -135,6 +135,8 @@ if __name__ == '__main__':
         
         if params.train_aug:
             wandb_name += "_aug"
+        if params.feti and 'ResNet' in params.backbone:
+            wandb_name += "_feti"
         wandb_name += "_" + params.datetime
         
         wandb.init(project=project_name, name=wandb_name,
@@ -145,7 +147,7 @@ if __name__ == '__main__':
         base_file = configs.data_dir['miniImagenet'] + 'all.json'
         val_file = configs.data_dir['CUB'] + 'val.json'
     elif params.dataset == 'cross_char':
-        base_file = configs.data_dir['omniglot'] + 'noLatin.json'
+        base_file = configs.data_dir['Omniglot'] + 'noLatin.json'
         val_file = configs.data_dir['emnist'] + 'val.json'
     else:
         base_file = configs.data_dir[params.dataset] + 'base.json'
@@ -156,7 +158,7 @@ if __name__ == '__main__':
     else:
         image_size = 224 if 'ResNet' in params.backbone else 84
 
-    if params.dataset in ['omniglot', 'cross_char']:
+    if params.dataset in ['Omniglot', 'cross_char']:
         if params.backbone == 'Conv4': params.backbone = 'Conv4S'
         if params.backbone == 'Conv6': params.backbone = 'Conv6S'
 
@@ -182,23 +184,21 @@ if __name__ == '__main__':
             variant = 'cosine' if params.method == 'FSTF_cosine' else 'softmax'
             
             def feature_model():
-                if params.dataset in ['omniglot', 'cross_char']:
+                if params.dataset in ['Omniglot', 'cross_char']:
                     params.backbone = change_model(params.backbone)
-                return model_dict[params.backbone](params.dataset, flatten=True)
+                return model_dict[params.backbone](params.feti, params.dataset, flatten=True) if 'ResNet' in params.backbone else model_dict[params.backbone](params.dataset, flatten=True)
 
-            model = FewShotTransformer(
-                feature_model, variant=variant, **few_shot_params)
+            model = FewShotTransformer(feature_model, variant=variant, **few_shot_params)
             
         elif params.method in ['CTX_softmax', 'CTX_cosine']:
             variant = 'cosine' if params.method == 'CTX_cosine' else 'softmax'
             input_dim = 512 if "ResNet" in params.backbone else 64
             def feature_model():
-                if params.dataset in ['omniglot', 'cross_char']:
+                if params.dataset in ['Omniglot', 'cross_char']:
                     params.backbone = change_model(params.backbone)
-                return model_dict[params.backbone](params.dataset, flatten=False)
+                return model_dict[params.backbone](params.feti, params.dataset, flatten=False) if 'ResNet' in params.backbone else model_dict[params.backbone](params.dataset, flatten=False)
 
-            model = CTX(
-                feature_model, variant=variant, input_dim=input_dim, **few_shot_params)
+            model = CTX(feature_model, variant=variant, input_dim=input_dim, **few_shot_params)
     else:
         raise ValueError('Unknown method')
 
@@ -209,6 +209,8 @@ if __name__ == '__main__':
         configs.save_dir, params.dataset, params.backbone, params.method)
     if params.train_aug:
         params.checkpoint_dir += '_aug'
+    if params.feti and 'ResNet' in params.backbone:
+        params.checkpoint_dir += '_feti'
 
     params.checkpoint_dir += '_%dway_%dshot' % (
         params.n_way, params.k_shot)
@@ -237,7 +239,7 @@ if __name__ == '__main__':
             testfile = configs.data_dir['CUB'] + split + '.json'
     elif params.dataset == 'cross_char':
         if split == 'base':
-            testfile = configs.data_dir['omniglot'] + 'noLatin.json'
+            testfile = configs.data_dir['Omniglot'] + 'noLatin.json'
         else:
             testfile = configs.data_dir['emnist'] + split + '.json'
     else:
@@ -286,6 +288,7 @@ if __name__ == '__main__':
         timestamp = params.datetime
 
         aug_str = '-aug' if params.train_aug else ''
+        aug_str += '-feti' if params.feti and 'ResNet' in params.backbone else ''
 
         if params.backbone == "Conv4SNP": 
             params.backbone = "Conv4"
@@ -296,6 +299,6 @@ if __name__ == '__main__':
         
         acc_str = 'Test Acc = %4.2f%% +- %4.2f%%' % (acc_mean, 1.96 * acc_std/np.sqrt(iter_num))
         
-        f.write('Time: %s   Setting: %s %s \n' % (timestamp, exp_setting.ljust(45), acc_str))
+        f.write('Time: %s   Setting: %s %s \n' % (timestamp, exp_setting.ljust(50), acc_str))
         
     wandb.finish()

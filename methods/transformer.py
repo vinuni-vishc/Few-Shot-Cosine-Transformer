@@ -7,7 +7,7 @@ from abc import abstractmethod
 from methods.meta_template import MetaTemplate
 from einops import rearrange, repeat
 from einops.layers.torch import Rearrange
-from backbone import CosineDistLinear, FCN
+from backbone import CosineDistLinear
 import pdb
 import IPython
 
@@ -24,8 +24,6 @@ class FewShotTransformer(MetaTemplate):
         self.variant = variant
         self.depth = depth
         dim = self.feat_dim
-                    
-        self.FCN = FCN()
 
         self.ATTN = Attention(dim, heads = heads, dim_head = dim_head, variant = variant)
         
