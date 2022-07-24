@@ -12,5 +12,4 @@ dataset/Yoga/Dataset
 *__pycache__*
 wandb/
 *.swp
-*.txt
 *.json
