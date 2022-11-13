@@ -25,7 +25,6 @@ def init_loader(filename):
     with h5py.File(filename, 'r') as f:
         fileset = SimpleHDF5Dataset(f)
 
-    #labels = [ l for l  in fileset.all_labels if l != 0]
     feats = fileset.all_feats_dset
     labels = fileset.all_labels
     while np.sum(feats[-1]) == 0:

@@ -60,27 +60,6 @@ class SubDataset:
         random.seed(seed)
         torch.manual_seed(seed)
         img = self.transform(img)
-        # if self.edges:
-        #     cv_img = cv.imread(image_path, 0)
-        #     edges = cv.Canny(cv_img, 100, 200)
-        #     edges = cv.cvtColor(edges, cv.COLOR_BGR2RGB)
-        #     edges = Image.fromarray(edges)
-        #     random.seed(seed)
-        #     torch.manual_seed(seed)
-        #     edges = self.transform_edges(edges)
-        # else:
-        #     edges = 0
-
-        # from matplotlib import pyplot as plt
-        # from einops import rearrange
-        # img = rearrange(img, 'c h w -> h w c')[..., :3]
-        # edges = rearrange(edges, 'c h w -> h w c')[..., :3]
-        # plt.subplot(121),plt.imshow(img,cmap = 'gray')
-        # plt.title('Original Image'), plt.xticks([]), plt.yticks([])
-        # plt.subplot(122),plt.imshow(edges,cmap = 'gray')
-        # plt.title('Edge Image'), plt.xticks([]), plt.yticks([])
-        # plt.show()
-        # pdb.set_trace()
         
         target = self.target_transform(self.cl)
         return img, target

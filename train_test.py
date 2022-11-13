@@ -135,8 +135,8 @@ if __name__ == '__main__':
         
         if params.train_aug:
             wandb_name += "_aug"
-        if params.feti and 'ResNet' in params.backbone:
-            wandb_name += "_feti"
+        if params.FETI and 'ResNet' in params.backbone:
+            wandb_name += "_FETI"
         wandb_name += "_" + params.datetime
         
         wandb.init(project=project_name, name=wandb_name,
@@ -164,7 +164,7 @@ if __name__ == '__main__':
 
     optimization = params.optimization
 
-    if params.method in ['FSTF_softmax', 'FSTF_cosine', 'CTX_softmax', 'CTX_cosine']:
+    if params.method in ['FSCT_softmax', 'FSCT_cosine', 'CTX_softmax', 'CTX_cosine']:
 
         few_shot_params = dict(
             n_way=params.n_way, k_shot=params.k_shot, n_query = params.n_query)
@@ -180,13 +180,13 @@ if __name__ == '__main__':
        
         seed_func()
 
-        if params.method in ['FSTF_softmax', 'FSTF_cosine']:
-            variant = 'cosine' if params.method == 'FSTF_cosine' else 'softmax'
+        if params.method in ['FSCT_softmax', 'FSCT_cosine']:
+            variant = 'cosine' if params.method == 'FSCT_cosine' else 'softmax'
             
             def feature_model():
                 if params.dataset in ['Omniglot', 'cross_char']:
                     params.backbone = change_model(params.backbone)
-                return model_dict[params.backbone](params.feti, params.dataset, flatten=True) if 'ResNet' in params.backbone else model_dict[params.backbone](params.dataset, flatten=True)
+                return model_dict[params.backbone](params.FETI, params.dataset, flatten=True) if 'ResNet' in params.backbone else model_dict[params.backbone](params.dataset, flatten=True)
 
             model = FewShotTransformer(feature_model, variant=variant, **few_shot_params)
             
@@ -196,7 +196,7 @@ if __name__ == '__main__':
             def feature_model():
                 if params.dataset in ['Omniglot', 'cross_char']:
                     params.backbone = change_model(params.backbone)
-                return model_dict[params.backbone](params.feti, params.dataset, flatten=False) if 'ResNet' in params.backbone else model_dict[params.backbone](params.dataset, flatten=False)
+                return model_dict[params.backbone](params.FETI, params.dataset, flatten=False) if 'ResNet' in params.backbone else model_dict[params.backbone](params.dataset, flatten=False)
 
             model = CTX(feature_model, variant=variant, input_dim=input_dim, **few_shot_params)
     else:
@@ -209,8 +209,8 @@ if __name__ == '__main__':
         configs.save_dir, params.dataset, params.backbone, params.method)
     if params.train_aug:
         params.checkpoint_dir += '_aug'
-    if params.feti and 'ResNet' in params.backbone:
-        params.checkpoint_dir += '_feti'
+    if params.FETI and 'ResNet' in params.backbone:
+        params.checkpoint_dir += '_FETI'
 
     params.checkpoint_dir += '_%dway_%dshot' % (
         params.n_way, params.k_shot)
@@ -288,7 +288,7 @@ if __name__ == '__main__':
         timestamp = params.datetime
 
         aug_str = '-aug' if params.train_aug else ''
-        aug_str += '-feti' if params.feti and 'ResNet' in params.backbone else ''
+        aug_str += '-FETI' if params.FETI and 'ResNet' in params.backbone else ''
 
         if params.backbone == "Conv4SNP": 
             params.backbone = "Conv4"

@@ -328,8 +328,8 @@ def Conv6SNP(dataset, flatten=True):
     return ConvNetSNopool(6, flatten)
 
 
-def ResNet12(feti, dataset, flatten=True):
-    if feti:
+def ResNet12(FETI, dataset, flatten=True):
+    if FETI:
         model = ResNet(BasicBlock, [2, 1, 1, 1], flatten)
         pretrained_dict = pretrain_load(pretrained_path)
         model.load_state_dict(pretrained_dict['state_dict'], strict=False)
@@ -339,8 +339,8 @@ def ResNet12(feti, dataset, flatten=True):
     return model
 
 
-def ResNet18(feti, dataset, flatten=True):
-    if feti:
+def ResNet18(FETI, dataset, flatten=True):
+    if FETI:
         model = ResNet(BasicBlock, [2, 2, 2, 2], flatten)
         pretrained_dict = pretrain_load(pretrained_path)
         model.load_state_dict(pretrained_dict['state_dict'], strict=False)
@@ -349,8 +349,8 @@ def ResNet18(feti, dataset, flatten=True):
     return model
 
 
-def ResNet34(feti, dataset, flatten=True):
-    if feti:
+def ResNet34(FETI, dataset, flatten=True):
+    if FETI:
         model = ResNet(BasicBlock, [3, 4, 6, 3], flatten)
         pretrained_dict = pretrain_load(pretrained_path)
         model.load_state_dict(pretrained_dict['state_dict'], strict=False)

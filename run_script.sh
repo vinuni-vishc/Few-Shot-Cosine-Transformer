@@ -12,7 +12,7 @@ do
         do
             for shot in 1 5
             do
-                for method in "FSTF_softmax" "FSTF_cosine"
+                for method in "FSCT_softmax" "FSCT_cosine"
                 do
                     for aug in 0 1
                     do

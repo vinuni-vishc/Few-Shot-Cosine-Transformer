@@ -22,8 +22,8 @@ device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 
 
 class CTX(MetaTemplate):
-    def __init__(self, model_func,  n_way, k_shot, n_query, heatmap=0, variant="softmax",
-                input_dim = 64, dim_key=128, dim_value=128):
+    def __init__(self, model_func, n_way, k_shot, n_query, heatmap=0, variant="softmax",
+                input_dim = 64, dim_attn=128):
         super(CTX, self).__init__(model_func,  n_way, k_shot, n_query)
 
         self.loss_fn = nn.CrossEntropyLoss()
@@ -31,10 +31,8 @@ class CTX(MetaTemplate):
         self.k_shot = k_shot
         self.attn = variant
         self.sm = nn.Softmax(dim=-1)
-        self.dim_key = dim_key
-
-        self.to_qk = nn.Conv2d(input_dim, dim_key, 1, bias=False)
-        self.to_v = nn.Conv2d(input_dim, dim_value, 1, bias=False)
+        self.dim_attn = dim_attn
+        self.linear_attn = nn.Conv2d(input_dim, dim_attn, 1, bias=False)
 
     def set_forward(self, x, is_feature=False):
         """
@@ -51,8 +49,8 @@ class CTX(MetaTemplate):
         z_support, z_query = self.parse_feature(x, is_feature)
         z_query, z_support = map(lambda t: rearrange(t, 'b n c h w -> (b n) c h w'), (z_query, z_support))
 
-        query_q, query_v = self.to_qk(z_query), self.to_v(z_query)
-        support_k, support_v = self.to_qk(z_support), self.to_v(z_support)
+        query_q, query_v, support_k, support_v = map(lambda t: self.linear_attn(t),
+                            (z_query, z_query, z_support, z_support))
         
         query_q, query_v = map(lambda t: rearrange(t, 'q c h w -> q () (c h w)'), (query_q, query_v))
         support_k, support_v = map(lambda t: rearrange(t, '(n k) c h w -> n (c h w) k',
@@ -62,7 +60,7 @@ class CTX(MetaTemplate):
         
         if self.attn == 'softmax':
             dots = torch.matmul(query_q, support_k)
-            scale = self.dim_key ** 0.5
+            scale = self.dim_attn ** 0.5
             attn_weights = self.sm(dots / scale)
             
         else:

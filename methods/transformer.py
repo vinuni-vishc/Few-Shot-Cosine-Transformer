@@ -51,10 +51,10 @@ class FewShotTransformer(MetaTemplate):
         
         z_query = z_query.contiguous().view(self.n_way * self.n_query, -1).unsqueeze(1)                # (q, 1, d)
 
-        x, support = z_proto, z_query
+        x, query = z_proto, z_query
         
         for _ in range(self.depth):
-           x = self.ATTN(q = x, k = support, v = support) + x
+           x = self.ATTN(q = x, k = query, v = query) + x
            x = self.FFN(x) + x
         
         # Output is the probabilistic prediction for each class
