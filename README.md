@@ -3,7 +3,7 @@ This repo contains the official implementation code for the paper [**Enhancing F
 ## Table of Content
 - [Enhancing Few-shot Image Classification with Cosine Transformer](#enhancing-few-shot-image-classification-with-cosine-transformer)
   - [Table of Content](#table-of-content)
-  - [Abstract](#abstract)
+  - [Few-shot Cosine Transformer](#few-shot-cosine-transformer)
   - [Experiments](#experiments)
     - [Dependencies environment](#dependencies-environment)
     - [Dataset](#dataset)
@@ -13,8 +13,7 @@ This repo contains the official implementation code for the paper [**Enhancing F
   - [Acknowledgment](#acknowledgment)
   - [Citation](#citation)
   - [Contact](#contact)
-## Abstract
-> *This paper addresses the few-shot image classification problem. One notable limitation of few-shot learning is the variation in describing the same category, which might result in a significant difference between small labeled support and large unlabeled query sets. Our approach is to obtain a relation heatmap between the two sets in order to label the latter one in a transductive setting manner. This can be solved by using cross-attention with the scaled dot-product mechanism. However, the magnitude differences between two separate sets of embedding vectors may cause a significant impact on the output attention map and affect model performance. We tackle this problem by improving the attention mechanism with cosine similarity. Specifically, we develop FS-CT (Few-shot Cosine Transformer), a few-shot image classification method based on prototypical embedding and transformer-based framework. The proposed Cosine attention improves FS-CT performances significantly from nearly 5% to over 20% in accuracy compared to the baseline scaled dot-product attention in various scenarios on three few-shot datasets mini-ImageNet, CUB-200, and CIFAR-FS. Additionally, we enhance the prototypical embedding for categorical representation with learnable weights before feeding them to the attention module. Our proposed method FS-CT along with the Cosine attention is simple to implement and can be applied for a wide range of applications.*
+## Few-shot Cosine Transformer
 
 ![](figures/FSCosineTransformer.png)***The overall architecture of the proposed Few-shot Cosine Transformer***, which includes two main components: (a) *learnable prototypical embedding* that calculates the categorical proto representation given random support features that might be either in the far margin of the distribution or very close to each other and (b) *Cosine transformer* that determines the similarity matrix between proto representations and query samples for the few-shot classification tasks. The heart of the transformer architecture is *Cosine attention*, an attention mechanism with cosine similarity and no softmax function to deal with two different sets of features. The Cosine transformer shares a similar architecture with a standard transformer encoder block, with two skip connections to preserve information, a two-layer feed-forward network, and layer normalization between them to reduce noise. The outcome value is through a cosine linear layer, with cosine similarity replacing the dot-product, before feeding to softmax for query prediction.
 
@@ -116,7 +115,7 @@ If you find our code useful, please consider citing our work using the bibtex:
 ```
 @misc{nguyen2022cosinetransformer,
 title={Cosine Transformer for Transductive Few-Shot Image Classification},
-author={Nguyen, Quang-Huy and Nguyen, Quoc-Cuong and Le, Duy-Dung and Pham, Huy-Hieu and Do, Minh},
+author={Nguyen, Quang-Huy and Nguyen, Cuong Q. and Le, Dung D. and Pham, Hieu H. and Do, Minh N.},
 preprint={},
 archivePrefix={arXiv},
 primaryClass={cs.CV}
