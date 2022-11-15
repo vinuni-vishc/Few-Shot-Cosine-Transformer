@@ -90,13 +90,7 @@ class Attention(nn.Module):
         f_q, f_k, f_v = map(lambda t: rearrange(
             self.input_linear(t), 'q n (h d) ->  h q n d', h = self.heads), (q, k ,v))    
         
-        if self.variant == "linear":  
-            # Efficient Attention https://arxiv.org/abs/1812.01243v9
-            f_q, f_k = map(lambda x: self.sm(x) * self.scale, (f_q, f_k))
-            dots = torch.matmul(f_k, f_v.transpose(-1, -2)) 
-            out = torch.matmul(f_q.transpose(-1,-2), dots).transpose(-1, -2)
-            
-        elif self.variant == "cosine":
+        if self.variant == "cosine":
             dots = cosine_distance(f_q, f_k.transpose(-1, -2))                                         # (h, q, n, 1)
             out = torch.matmul(dots, f_v)                                                              # (h, q, n, d_h)
         

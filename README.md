@@ -1,8 +1,9 @@
 # Enhancing Few-shot Image Classification with Cosine Transformer
-This repo contains the official implementation code for the paper [**Enhancing Few-shot Image Classification with Cosine Transformer**](). In this project, we develop a transformer-based method for few-shot classification with an improved cross-attention mechanism based on cosine similarity.
-## Table of Content
+This repo contains the official implementation code for the paper [**Enhancing Few-shot Image Classification with Cosine Transformer**](https://arxiv.org/abs/2211.06828). In this project, we develop a transformer-based method for few-shot classification with an improved cross-attention mechanism based on cosine similarity.
+
+## Table of Content  <!-- omit in toc -->
+
 - [Enhancing Few-shot Image Classification with Cosine Transformer](#enhancing-few-shot-image-classification-with-cosine-transformer)
-  - [Table of Content](#table-of-content)
   - [Few-shot Cosine Transformer](#few-shot-cosine-transformer)
   - [Experiments](#experiments)
     - [Dependencies environment](#dependencies-environment)
@@ -113,12 +114,10 @@ All results are stored in `record/official_results.txt`
 ## Citation
 If you find our code useful, please consider citing our work using the bibtex:
 ```
-@misc{nguyen2022cosinetransformer,
-title={Cosine Transformer for Transductive Few-Shot Image Classification},
+@article{nguyen2022cosinetransformer,
+title={Enhancing Few-shot Image Classification with Cosine Transformer},
 author={Nguyen, Quang-Huy and Nguyen, Cuong Q. and Le, Dung D. and Pham, Hieu H. and Do, Minh N.},
-preprint={},
-archivePrefix={arXiv},
-primaryClass={cs.CV}
+journal={arXiv preprint arXiv:2211.06828}
 }
 ```
 
