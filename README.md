@@ -22,19 +22,7 @@ This repo contains the official implementation code for the paper [**Enhancing F
 
 ## Experiments
 ### Dependencies environment
-```
-  `torch` v1.10.2+cu113
-  `CUDA` 11.6
-  `torchvision` 0.11.3+cu113     #installed along with Torch
-  `openCV-python` 4.5.5.62
-  `einops`
-  `numpy`
-  `pdb` (optional)
-  `matplotlib`
-  `PIL`
-  `json`
-  `wandb` (optional)
-```
+  + `pip install -r requirements.txt`
 ### Dataset
 + **_mini_-ImageNet**:  
   + Go to `/dataset/miniImagenet/`

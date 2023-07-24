@@ -28,8 +28,8 @@ class TransformLoader:
             return method(self.image_size)
         elif transform_type=='CenterCrop':
             return method(self.image_size) 
-        elif transform_type=='Scale':
-            return method([int(self.image_size*1.15), int(self.image_size*1.15)])
+        # elif transform_type=='Scale':
+        #     return method([int(self.image_size*1.15), int(self.image_size*1.15)])
         elif transform_type=='Normalize':
             return method(**self.normalize_param )
         else:
@@ -39,7 +39,7 @@ class TransformLoader:
         if aug:
                 transform_list = ['Resize','RandomSizedCrop', 'ColorJitter', 'RandomHorizontalFlip', 'ToTensor', 'Normalize']
         else:
-            transform_list = ['Resize','Scale','CenterCrop', 'ToTensor', 'Normalize']
+            transform_list = ['Resize','CenterCrop', 'ToTensor', 'Normalize']
             
         transform_funcs = [ self.parse_transform(x) for x in transform_list]
         transform = transforms.Compose(transform_funcs)

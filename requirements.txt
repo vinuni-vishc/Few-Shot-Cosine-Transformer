@@ -1,0 +1,12 @@
+opencv-python
+torch
+torchvision
+torchsummary
+einops
+h5py
+ipython
+numpy
+matplotlib
+pillow
+tqdm
+wandb
