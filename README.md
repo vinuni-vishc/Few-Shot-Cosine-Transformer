@@ -1,5 +1,7 @@
 # Enhancing Few-shot Image Classification with Cosine Transformer
-This repo contains the official implementation code for the paper [**Enhancing Few-shot Image Classification with Cosine Transformer**](https://arxiv.org/abs/2211.06828). In this project, we develop a transformer-based method for few-shot classification with an improved cross-attention mechanism based on cosine similarity.
+This repo contains the official implementation code for the paper [**Enhancing Few-shot Image Classification with Cosine Transformer**](https://arxiv.org/abs/2211.06828). In this project, we developed a transformer-based algorithm FS-CT for few-shot classification and cross-attention mechansim, where we proved that cosine similarity benefits attention mechanism and and improve few-shot algorithms across settings and datasets. In particular, with the proposed Cosine attention, we achieve a more stable and consistent output as correlation map between support and query feature and thus improve ViT-bases few-shot algorithms' performance greatly. 
+
+  **July, 2023**: Our paper is accepted in IEEE Access (Q1 journal)
 
 ## Table of Content  <!-- omit in toc -->
 
@@ -114,10 +116,12 @@ All results are stored in `record/official_results.txt`
 ## Citation
 If you find our code useful, please consider citing our work using the bibtex:
 ```
-@article{nguyen2022cosinetransformer,
+@article{nguyen2023FSCT,
 title={Enhancing Few-shot Image Classification with Cosine Transformer},
-author={Nguyen, Quang-Huy and Nguyen, Cuong Q. and Le, Dung D. and Pham, Hieu H. and Do, Minh N.},
-journal={arXiv preprint arXiv:2211.06828}
+author={Nguyen, Quang-Huy and Nguyen, Cuong Q. and Le, Dung D. and Pham, Hieu H}.,
+journal={IEEE Access},
+year={2023},
+doi={10.1109/ACCESS.2023.3298299}
 }
 ```
 
