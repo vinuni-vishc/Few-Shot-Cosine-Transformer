@@ -1,7 +1,5 @@
 # Enhancing Few-shot Image Classification with Cosine Transformer
-This repo contains the official implementation code for the paper [**Enhancing Few-shot Image Classification with Cosine Transformer**](https://arxiv.org/abs/2211.06828). In this project, we developed a transformer-based algorithm FS-CT for few-shot classification and cross-attention mechansim, where we proved that cosine similarity benefits attention mechanism and and improve few-shot algorithms across settings and datasets. In particular, with the proposed Cosine attention, we achieve a more stable and consistent output as correlation map between support and query feature and thus improve ViT-bases few-shot algorithms' performance greatly. 
-
-  **July, 2023**: Our paper is accepted in IEEE Access (Q1 journal)
+This repo contains the official implementation code for the paper [**Enhancing Few-shot Image Classification with Cosine Transformer**](https://ieeexplore.ieee.org/document/10190567/) (IEEE Access). In this project, we developed a transformer-based algorithm FS-CT for few-shot classification and cross-attention mechansim, where we proved that cosine similarity benefits attention mechanism and and improve few-shot algorithms across settings and datasets. In particular, with the proposed Cosine attention, we achieve a more stable and consistent output as correlation map between support and query feature and thus improve ViT-bases few-shot algorithms' performance greatly. 
 
 ## Table of Content  <!-- omit in toc -->
 
@@ -105,12 +103,14 @@ All results are stored in `record/official_results.txt`
 If you find our code useful, please consider citing our work using the bibtex:
 ```
 @article{nguyen2023FSCT,
-title={Enhancing Few-shot Image Classification with Cosine Transformer},
-author={Nguyen, Quang-Huy and Nguyen, Cuong Q. and Le, Dung D. and Pham, Hieu H}.,
-journal={IEEE Access},
-year={2023},
-doi={10.1109/ACCESS.2023.3298299}
-}
+  author={Nguyen, Quang-Huy and Nguyen, Cuong Q. and Le, Dung D. and Pham, Hieu H.},
+  journal={IEEE Access}, 
+  title={Enhancing Few-Shot Image Classification With Cosine Transformer}, 
+  year={2023},
+  volume={11},
+  number={},
+  pages={79659-79672},
+  doi={10.1109/ACCESS.2023.3298299}}
 ```
 
 ## Contact
